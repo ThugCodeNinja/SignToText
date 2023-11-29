@@ -1,27 +1,48 @@
-**Sign-Language-To-Text-and-Speech-Conversion**
+#  Sign Language to Text Conversion
 
-**ABSTRACT:** 
+Welcome to the Sign Language to Text Conversion web application! This application is designed to assist users in converting sign language gestures into text. Whether you're communicating with someone who uses sign language or learning it yourself, this app aims to bridge the communication gap by providing accurate text representation.
 
- Sign language is a rich and ancient mode of communication, which has for ages molded the way specially-abled individuals interact with each other. This set excellent context and allowed us to work towards smoothening the communication experience between frequent and inexperienced signers. Our project is dedicated to advancing the conversion of sign language into text in real-time. We employ state-of-the-art neural network technology to transform finger-spelling-based American Sign Language into written text, offering a powerful tool for inclusive communication.
+## Features
 
-Automatic recognition of human gestures from camera images is a fascinating field within computer vision, and it holds immense potential for various applications. In our project, we focus on developing a robust solution that employs Convolutional Neural Networks (CNNs) to identify and understand hand gestures performed in the context of human activities, all from camera-captured images.
+### 1. Sign Language Recognition
 
-Our approach begins by capturing the position and orientation of the hand, which serves as the foundation for our CNN model's training and testing data. These images are first preprocessed through a filter designed to enhance the pertinent features. After this preprocessing step, the filtered images are fed into a classifier that predicts the specific class of the finger spelling.
+- **Real-Time Recognition**: The application utilizes a real-time sign language recognition system to interpret gestures.
+- **User-Friendly Interface**: With an intuitive design, users can easily interact with the application using their device's camera.
 
-In the final phase, the CNN is trained using these calibrated images, enabling it to accurately recognize and translate American Sign Language(ASL) gestures into written text. This project not only aims to facilitate communication for the deaf and hard of hearing but also showcases the potential of cutting-edge technology in bridging linguistic and cultural gaps.
+### 2. Text Representation
 
+- **Instant Text Output**: Receive instant text representation of the interpreted sign language gestures.
+- **Basic Support**: The application supports finger spelling and will allow you to construct custom words.
 
+### 3. Accessibility
 
+- **Web-Based Interface**: Access the application through any web browser, ensuring broad accessibility.
+- **Responsive Design**: The user interface is designed to be responsive and accessible on various devices.
 
-**Proposed System**
+## Getting Started
 
- Our proposed system represents a significant improvement in enhancing communication and inclusivity for sign language users and non-signers alike. With a primary goal of enabling real-time comprehension of word-level sign language, this innovative platform offers a user-friendly interface that can seamlessly fit in conversations organically.At the core of our system lies the integration of cutting-edge deep learning and computer vision algorithms, ensuring accurate and real-time predictions. By receiving finger spelling signals as input, our application excels at interpreting intricate finger-level sign language gestures and constructing meaningful sentences, facilitating smooth and effective communication.
+To get started with the Flask Sign Language to Text Conversion web application, follow these steps:
 
-To achieve this level of accuracy and performance, our system undergoes training using a custom dataset specifically designed for the purpose. This dataset is comprised of a file directory containing images that have been meticulously processed with a Gaussian blur filter. This filter is crucial for extracting essential features, with a particular focus on identifying and tracking the hand within the frame.
+1. **Clone the Repository**: Clone this repository to your local machine using the following command:
+   ```
+   git clone https://github.com/ThugCodeNinja/SignToText.git
+   ```
 
-At the heart of the application MediaPipe and CV algorithms are used to identify the hand and then use the created landmarks in CNN to identify and classify the finger spelling into the mentioned classes. The UI is supported by a backend enabled by flask which serves the videofeed and results for the realtime text conversion.
+2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies using:
+   ```
+   pip install -r requirements.txt
+   ```
 
-In summary, our proposed system looks to implement  realtime conversion and combine the best of significant deep learning algorithms.
+3. **Run the Application**: Start the Flask development server with the command:
+   ```
+   flask run
+   ```
 
-**Scope:**
-This System will be Beneficial for Both Dumb/Deaf People and the non signers as well. 
+4. **Open in Browser**: Open your web browser and go to `http://localhost:5000` to access the application.(Code for ECC@ deployment)
+
+## Configuration
+Currently configured to run on AWS EC2 but not deployed currently.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
