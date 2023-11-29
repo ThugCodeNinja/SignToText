@@ -33,9 +33,10 @@ To get started with the Flask Sign Language to Text Conversion web application, 
    pip install -r requirements.txt
    ```
 
-3. **Run the Application**: Start the Flask development server with the command:
+3. **Run the Application**: Start the Flask development server with the command :
    ```
-   flask run
+   cd interface
+   flask run/ python app1.py
    ```
 
 4. **Open in Browser**: Open your web browser and go to `http://localhost:5000` to access the application.(Code for ECC@ deployment)
